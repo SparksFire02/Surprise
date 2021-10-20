@@ -108,13 +108,9 @@
             dots[ref].className += " active";
         }
 
-        var topref = document.getElementById("second");  
-        console.log(topref.offsetHeight * 2);    
-
-        
+        var topref = document.getElementById("second");        
         window.addEventListener("scroll", function(){ 
             var st = window.pageYOffset || document.documentElement.scrollTop;
-            console.log(st);
 
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
