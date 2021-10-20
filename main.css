@@ -43,10 +43,39 @@ nav a {
     border-radius: 50%;
     display: inline-block;
     transition: 0.6s ease;
+    position: relative;
 }
   
 .active, .dot:hover {
     background-color: rgb(117, 131, 141);
+}
+
+.dot::before {
+    display: none;
+    min-width: 200px;
+    right: 20px;
+    top: 0;
+    position: absolute;
+    line-height: 10px;
+    text-align: right;
+    font-size: 0.8em;
+    color: rgb(117, 131, 141);
+}
+
+.dot:hover::before {
+    display: block;
+}
+
+#dot0::before {
+    content: "Happy Birthday!";
+}
+
+#dot1::before {
+    content: "Countdown";
+}
+
+#dot2::before {
+    content: "Wishes";
 }
 
 /* first section */

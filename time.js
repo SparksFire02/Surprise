@@ -17,8 +17,29 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("time").innerHTML = days + " days " + hours + " hours "
-  + minutes + " mins " + seconds + " secs ";
+    if(days <= 1)
+        var dayString = "day"
+    else
+        var dayString = "days"
+
+    if(hours <= 1)
+        var hrString = "hour"
+    else
+        var hrString = "hours"
+    
+    if(minutes <= 1)
+        var minString = "min"
+    else
+        var minString = "mins"
+
+    if(seconds <= 1)
+        var secString = "sec"
+    else
+        var secString = "secs"
+
+
+  document.getElementById("time").innerHTML = days + " " + dayString + " " + hours + " " + hrString + " "
+  + minutes + " " + minString + " " + seconds + " " + secString;
     
   // If the count down is over, write some text 
   if (distance < 0) {
