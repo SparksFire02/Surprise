@@ -1,7 +1,7 @@
 html, body {
     scroll-behavior: smooth;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Oxygen", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -134,4 +134,11 @@ nav a {
     padding: 0 30px 30px;
     text-align: justify;
     color: rgb(124, 136, 145);
+}
+
+/* footer */
+footer {
+    text-align: center;
+    color: rgb(117, 131, 141);
+    margin-bottom: 20px;
 }
