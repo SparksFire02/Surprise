@@ -4,19 +4,24 @@ html, body {
     font-family: "Oxygen", sans-serif;
 }
 
+html {
+    scroll-snap-type: y proximity;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
 
 section {
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 /* navbar */
 nav {
     position: fixed;
     right: 3%;
-    top: 50%;
+    top: calc(50% - 36px);
 }
 
 nav div {
@@ -97,6 +102,7 @@ nav a {
     text-align: center;
     font-weight: 600;
     color: rgb(72, 81, 87);
+    margin: 50px 0 30px 0;
 }
 
 .container {
