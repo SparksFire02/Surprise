@@ -13,8 +13,9 @@ body::-webkit-scrollbar {
 }
 
 section {
-    height: 100vh;
     scroll-snap-align: start;
+    min-height: 100vh;
+    padding: 0 5%;
 }
 
 /* navbar */
@@ -147,4 +148,35 @@ footer {
     text-align: center;
     color: rgb(117, 131, 141);
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .intro-title {
+        font-size: 2em;
+    }
+
+    .intro-subtitle {
+        font-size: 1em;
+    }
+
+    .countdown {
+        font-size: 1.5em;
+    }
+
+    .container-title {
+        font-size: 1.8em;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .content {
+        font-size: 0.9em;
+    }
+
+    footer {
+        margin-top: 50px;
+        font-size: 0.8em;
+    }
 }
