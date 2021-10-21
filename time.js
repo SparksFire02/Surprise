@@ -1,15 +1,16 @@
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 1, 2021 00:00:00").getTime();
 var countDownDate2 = new Date("Nov 1, 2021 12:00:00").getTime();
-var choice = 1;
 
 // Update the count down every 1 second
 var x = setInterval(function() {
 
+    var choice = document.getElementById("lab").innerHTML;
+
     // Get today's date and time
     var now = new Date().getTime();
     
-    if(choice == 1) {
+    if(choice == "Stage 1") {
         // Find the distance between now and the count down date
         var distance = countDownDate - now;
 
@@ -49,6 +50,9 @@ var x = setInterval(function() {
                 + minutes + " " + minString + " " + seconds + " " + secString;
         }
     } else {
+        // Find the distance between now and the count down date
+        var distance = countDownDate2 - now;
+
         // If the count down is over, write some text 
         if (distance < 0) {
             clearInterval(x);
