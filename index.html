@@ -19,11 +19,14 @@
         <section class="flexbox column" id="second">
             <div class="time-panel column">                   
                 <div class="title time-title">We have something for you. Two actually.</div>
-                <div class="subtitle">This page will unlock more with every stage. Check back soon!</div>
-                <div class="flexbox row stage-label">
-                    <span class="material-icons hoverDisabled" style="margin-right: 2%;" id="left" disable onclick=toggleStageLeft()>arrow_back</span>
+                <div class="subtitle time-subtitle">This page will unlock more with every stage. Check back soon!</div>
+                <div class="stage-sep"></div>
+                <div class="flexbox row">
+                    <span class="material-icons hoverDisabled" id="left" disable onclick=toggleStageLeft()>arrow_back</span>
+                    <span class="icon-sep-1"></span>
                     <div class="label" id="lab">Stage 1</div>
-                    <span class="material-icons hoverEnabled" style="margin-left: 2%;" id="right" onclick=toggleStageRight()>arrow_forward</span>
+                    <span class="icon-sep-2"></span>
+                    <span class="material-icons hoverEnabled" id="right" onclick=toggleStageRight()>arrow_forward</span>
                 </div>
                 <div class="subtitle countdown" id="time"></div>
             </div>
