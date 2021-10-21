@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Happy Birthday, Tom!</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <script src="time.js"></script>
+</head>
+<body>
+    <nav>
+        <div style="text-align:center">
+            <a href="#first"><span class="dot active" onclick=onActive(0) id="dot0"></span></a>
+            <a href="#second"><span class="dot" onclick=onActive(1) id="dot1"></span></a>
+            <a href="#third"><span class="dot" onclick=onActive(2) id="dot2"></span></a>
+        </div>
+    </nav>
+    <main class="flexbox column">
+        <section class="intro flexbox column" id="first">
+            <div class="intro-title">
+                Happy Birthday Tom!
+            </div>
+            <div class="intro-subtitle">
+                Your birthday gift has been set to release at
+            </div>
+            <div class="intro-subtitle time">
+                01/11/2021 12.00 PM GMT +8
+            </div>
+            <div class="intro-subtitle">
+                Meanwhile, scroll down to read our personal wishes to you.
+            </div>
+        </section>
+        <section class="flexbox column" id="second">
+            <div class="time-panel column">
+                <div class="title">Releasing your gift in</div>
+                <div class="subtitle countdown" id="time"></div>
+            </div>
+        </section>
+        <section class="flexbox column" id="third">
+            <div class="container-title">Words of Wisdom?</div>
+            <div class="container flexbox row">
+                <div class="container-inner">
+                    <div class="header">
+                        <div class="title">Hong Wai</div>
+                        <div class="subtitle profession">Project planner</div>
+                    </div>
+                    <div class="content">
+                        Thank you for contributing towards my own present. I stand by the virtue of fairness. 
+                        We have planned this for quite a long time, since 10/10/2021 to avoid the rush that we had
+                        for Keith's birthday. I hope you enjoy your present, and of course, your day! 
+                    </div>
+                </div>
+                <div class="container-inner">
+                    <div class="header">
+                        <div class="title">Jing Chen</div>
+                        <div class="subtitle profession">Decision-making lead</div>
+                    </div>
+                    <div class="content">
+                        Happy grinding 
+                    </div>
+                </div>
+                <div class="container-inner">
+                    <div class="header">
+                        <div class="title">Cedric</div>
+                        <div class="subtitle profession">Contributor</div>
+                    </div>
+                    <div class="content">
+                        A year closer to 21, means you can soon gamble your profits away, legally.
+                    </div>
+                </div>
+                <div class="container-inner">
+                    <div class="header">
+                        <div class="title">Jabez Chin</div>
+                        <div class="subtitle profession">Contributor</div>
+                    </div>
+                    <div class="content">
+                        haha consider urself now the gifted kid loser
+                    </div>
+                </div>
+                <div class="container-inner">
+                    <div class="header">
+                        <div class="title">Sam</div>
+                        <div class="subtitle profession">Contributor</div>
+                    </div>
+                    <div class="content">
+                        I’m all up for the lowest amount of money required option. Happy birthday Tom!
+                    </div>
+                </div>
+                <div class="container-inner">
+                    <div class="header">
+                        <div class="title">Keith</div>
+                        <div class="subtitle profession">Contributor</div>
+                    </div>
+                    <div class="content">
+                        <i style="color: rgb(210, 210, 210);">Content not found.</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Created by Hong Wai, with minimalism in mind.
+    </footer>
+    <script>
+        var dots = document.getElementsByClassName("dot");
+
+        function onActive(ref) {
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            dots[ref].className += " active";
+        }
+
+        var topref = document.getElementById("second");        
+        window.addEventListener("scroll", function(){ 
+            var st = window.pageYOffset || document.documentElement.scrollTop;
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            if(st < topref.offsetHeight) {
+                dots[0].className += " active";
+            } else if(st < topref.offsetHeight * 2) {
+                dots[1].className += " active";
+            } else {
+                dots[2].className += " active";
+            }
+        }, false);
+    </script>
+</body>

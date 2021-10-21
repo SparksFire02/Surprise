@@ -121,29 +121,8 @@ nav a {
     color: rgb(153, 171, 184);
 }
 
-.stage-label {
-    margin-top: 3%;
-}
-
-.label {
-    color: rgb(153, 171, 184);
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.hoverEnabled {
-    color: rgb(153, 171, 184);
-}
-
-.hoverEnabled:hover {
-    cursor: pointer;
-}
-
-.hoverDisabled {
-    color: rgb(227, 232, 236);
-}
-
 .countdown {
+    margin-top: 2%;
     font-size: 3em;
 }
 
