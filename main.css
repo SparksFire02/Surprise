@@ -116,6 +116,10 @@ nav a {
     display: flex;
 }
 
+.time-title {
+    margin-bottom: 5px;
+}
+
 .subtitle {
     text-align: center;
     color: rgb(153, 171, 184);
