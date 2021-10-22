@@ -212,6 +212,8 @@ footer {
     margin-bottom: 20px;
 }
 
+/* media control */
+
 @media screen and (max-width: 600px) {
     .intro-title {
         font-size: 2em;
