@@ -116,47 +116,14 @@ nav a {
     display: flex;
 }
 
-.time-title {
-    margin-bottom: 5px;
-}
-
 .subtitle {
     text-align: center;
     color: rgb(153, 171, 184);
 }
 
-.stage-sep {
-    min-height: 40px;
-}
-
-.label {
-    color: rgb(153, 171, 184);
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.hoverEnabled {
-    color: rgb(153, 171, 184);
-}
-
-.hoverEnabled:hover {
-    cursor: pointer;
-}
-
-.hoverDisabled {
-    color: rgb(227, 232, 236);
-}
-
 .countdown {
+    margin-top: 2%;
     font-size: 3em;
-}
-
-.icon-sep-1 {
-    margin-right: 30px;
-}
-
-.icon-sep-2 {
-    margin-left: 30px;
 }
 
 /* wishes */
@@ -212,8 +179,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* media control */
-
 @media screen and (max-width: 600px) {
     .intro-title {
         font-size: 2em;
@@ -233,10 +198,6 @@ footer {
 
     .title {
         font-size: 1.2em;
-    }
-
-    .time-subtitle {
-        font-size: 0.9em;
     }
 
     .profession {

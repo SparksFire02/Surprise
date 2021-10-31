@@ -1,0 +1,232 @@
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: "Oxygen", sans-serif;
+}
+
+html {
+    scroll-snap-type: y proximity;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    padding: 0 10%;
+}
+
+/* navbar */
+nav {
+    position: fixed;
+    right: 3%;
+    top: calc(50% - 36px);
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    height: 10px;
+    margin: 7px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(201, 217, 228);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+    position: relative;
+}
+  
+.active, .dot:hover {
+    background-color: rgb(117, 131, 141);
+}
+
+.dot::before {
+    display: none;
+    min-width: 200px;
+    right: 20px;
+    top: 0;
+    position: absolute;
+    line-height: 10px;
+    text-align: right;
+    font-size: 0.8em;
+    color: rgb(117, 131, 141);
+}
+
+.dot:hover::before {
+    display: block;
+}
+
+#dot0::before {
+    content: "Happy Birthday!";
+}
+
+#dot1::before {
+    content: "Countdown";
+}
+
+#dot2::before {
+    content: "Wishes";
+}
+
+/* first section */
+.intro-title {
+    padding: 0 0 1em 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(117, 131, 141);
+}
+
+.intro-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(124, 136, 145);
+}
+
+.time {
+    margin: 10px 0 20px 0;
+    color: rgb(153, 171, 184);
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.img-container {
+    margin: 0 auto 30px;
+}
+
+.img-container div {
+    width: 300px;
+    height: 225px;
+    padding: 20px;
+    box-shadow: 0 5px 30px 0 rgba(153, 171, 184, 0.15);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.img-container img {
+    border-radius: 5px;
+}
+
+/* time */
+.time-panel {
+    display: flex;
+}
+
+.subtitle {
+    text-align: center;
+    color: rgb(153, 171, 184);
+}
+
+.countdown {
+    margin-top: 2%;
+    font-size: 3em;
+}
+
+/* wishes */
+.container-title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(72, 81, 87);
+    margin: 50px 0 30px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-inner {
+    min-width: 250px;
+    max-width: 260px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 30px 0 rgba(153, 171, 184, 0.15);
+    margin: 3%;
+    min-height: 320px;
+}
+
+.header {
+    padding: 30px 0 30px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(117, 131, 141);
+}
+
+.profession {
+    font-size: 1.1em;
+    padding: 0 30px;
+}
+
+.content {
+    padding: 0 30px 30px;
+    text-align: justify;
+    color: rgb(124, 136, 145);
+}
+
+/* footer */
+footer {
+    text-align: center;
+    color: rgb(117, 131, 141);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .intro-title {
+        font-size: 2em;
+    }
+
+    .intro-subtitle {
+        font-size: 1em;
+    }
+
+    .countdown {
+        font-size: 1.5em;
+    }
+
+    .container-title {
+        font-size: 1.8em;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .profession {
+        font-size: 0.9em;
+    }
+
+    .content {
+        font-size: 0.9em;
+    }
+
+    footer {
+        margin-top: 50px;
+        font-size: 0.8em;
+    }
+}

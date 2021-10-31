@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Untitled</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="navigation.js"></script>
+    <script src="time.js"></script>
+</head>
+<body>
+    <nav style="display: none;">
+        <div style="text-align:center">
+            <a href="#first"><span class="dot active" onclick=onActive(0) id="dot0"></span></a>
+            <a href="#second"><span class="dot" onclick=onActive(1) id="dot1"></span></a>
+            <a href="#third"><span class="dot" onclick=onActive(2) id="dot2"></span></a>
+        </div>
+    </nav>
+        <section class="flexbox column" id="second">
+            <div class="time-panel column">                   
+                <div class="title time-title">We have something for you. Two actually.</div>
+                <div class="subtitle time-subtitle">This page will unlock more with every stage. Check back soon!</div>
+                <div class="stage-sep"></div>
+                <div class="flexbox row">
+                    <span class="material-icons hoverDisabled" id="left" disable onclick=toggleStageLeft()>arrow_back</span>
+                    <span class="icon-sep-1"></span>
+                    <div class="label" id="lab">Stage 1</div>
+                    <span class="icon-sep-2"></span>
+                    <span class="material-icons hoverEnabled" id="right" onclick=toggleStageRight()>arrow_forward</span>
+                </div>
+                <div class="subtitle countdown" id="time"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Created by Hong Wai, with minimalism in mind.
+    </footer>
+</body>
