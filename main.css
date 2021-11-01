@@ -80,7 +80,7 @@ nav a {
 
 /* first section */
 .intro-title {
-    padding: 0 0 2em 0;
+    padding: 0 0 1em 0;
     text-align: center;
     font-size: 2.5em;
     font-weight: 600;
@@ -109,6 +109,30 @@ nav a {
 
 .row {
     flex-direction: row;
+}
+
+.img-container {
+    margin: 0 auto 30px;
+}
+
+.img-container div {
+    width: 300px;
+    height: 225px;
+    padding: 20px;
+    box-shadow: 0 5px 30px 0 rgba(153, 171, 184, 0.15);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.img-container img {
+    border-radius: 5px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 /* time */
